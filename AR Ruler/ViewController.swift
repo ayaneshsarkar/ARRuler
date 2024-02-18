@@ -56,7 +56,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 let hitTestResults = sceneView.session.raycast(query)
                 
                 if let hitResult = hitTestResults.first {
-                    
+                    addDot(at: hitResult)
                 }
             }
         }
